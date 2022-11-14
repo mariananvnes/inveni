@@ -19,11 +19,18 @@
     <a-scene
        vr-mode-ui="enabled: false"
 		embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
+	     gesture-detector>
        
-	    <a-entity gltf-model="assets/Ativo.gltf" rotation="90 180 90" scale="0.50 0.50 0.50" gps-entity-place="longitude: -9.104920848818045; latitude: 38.77316825156349;" animation-mixer/>
+	    <a-entity gltf-model="assets/teresa.gltf" 
+		      rotation="90 180 90" 
+		      scale="0.50 0.50 0.50" 
+		      gps-entity-place="longitude: -9.193600313184852; latitude: 38.71321971415001"
+		      gesture-handler
+		      animation-mixer/>
 	    
-	    <a-camera gps-camera="simulateLatitude: 38.77316825156349; simulateLongitude: -9.104920848818045; simulateAltitude: 200" rotation-reader>
+	    <a-camera gps-camera 
+		      rotation-reader>
 		</a-camera>
       
       
