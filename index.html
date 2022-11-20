@@ -25,12 +25,16 @@
 	    <a-entity gltf-model="assets/teresa.gltf" 
 		      rotation="90 180 90" 
 		      scale="0.50 0.50 0.50" 
-		      gps-entity-place="longitude: -9.193600313184852; latitude: 38.71321971415001"
-		      gesture-handler
+		      gps-entity-place="longitude: -9.1498597; latitude: 38.6499576"
 		      animation-mixer/>
 	    
-	    <a-camera gps-camera 
-		      rotation-reader>
+	    <a-camera 
+		      positionMinAccuracy
+		      look-controls-enabled='false' 
+		      arjs-look-controls='smoothingFactor: 0.1' 
+		      gps-camera='gpsMinDistance: 5' 
+		      rotation-reader
+		      >
 		</a-camera>
       
       
